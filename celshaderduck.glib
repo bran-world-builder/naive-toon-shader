@@ -1,0 +1,28 @@
+##OpenGL GLIB
+
+Perspective 90
+LookAt 5 5 6  0 0 0  0 1 0
+
+Texture2D   5   cloth.bmp
+Texture2D   6   cloth.bmp
+
+Vertex      celshader.vert
+Fragment    celshader.frag
+Program     CelShader                                   \
+        TexUnit1        5                               \
+        TexUnit2        6                               \
+        uEdge1          <true false>                    \
+        uEdge2          <true false>                    \
+        uToon           <true false>                    \
+        uTexture        <true false>                    \
+        uNormalTex      <true false>                    \
+        uKa             <0. .5 1.>                      \
+        uKd             <0. .5 1.>                      \
+        uKs             <0. .5 1.>                      \
+        uShininess      <3. 10. 1000.>                  \
+        uUnlitEdge      <0. .2 1.>                      \
+        uLitEdge        <0. .2 1.>                      \
+        uEdgeWidth      <.1 .15 1.>                     \
+        uHighlight      <.5 .75 1.>
+
+Obj rubberduck.obj
